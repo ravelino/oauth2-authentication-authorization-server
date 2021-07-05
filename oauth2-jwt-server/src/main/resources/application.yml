@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+security:
+  jwt:
+    key-store: classpath:keystore.jks
+    key-store-password: letmein
+    key-pair-alias: mytestkey
+    key-pair-password: changeme
+  oauth2:
+    client: rogerio
+    secret: avelino
+
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
